@@ -1,5 +1,3 @@
-
-
 html{
     background-color:rgb(245, 236, 224);
     position: relative;
@@ -101,4 +99,54 @@ section.calendar form label.day input[type=text]{
     font-size: 16px;
     transition: height 0.2s linear, opacity 0,2s linear, color 0.2s linear;
     color: #fff;
+}
+
+/* ni untuk type lepas tekan tarikh */
+section.calendar form label.day input[type=text]:focus{ 
+    opacity: 1;
+    height: 35px;
+    padding: 10px 40px;
+    left: -45px;
+    color:rgb(101, 49, 12);
+    background: antiquewhite;
+    width: 100%;
+}
+
+section.calendar form label.day input[type=text]:focus+span{
+    /* color: blueviolet; */
+    border-color: rgb(139, 87, 50);
+    background: rgb(224, 192, 151);
+    color: rgb(139, 87, 50);
+    font-weight: bold;
+    margin-bottom: 70px;
+} 
+
+section.calendar form label.day input[type=text]:focus~em{
+    border-radius: 0;
+    border: 5px solid transparent;
+    background: transparent;
+    border-bottom-color: #fff;
+    margin-top: -62px;
+    margin-left: 7px;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    opacity: 1;
+}
+
+section.calendar form label.day input[type=text]:valid~em{
+    display: inline-block;
+    opacity: 1;
+}
+
+section.calendar form label.day.invalid{
+    opacity: 0;
+    width: 25px;
+    height: 25px;
+}
+
+/* day invalid xleh tekan */
+section.calendar form label.day.invalid span,
+section.calendar form label.day.invalid input{
+    display: none;
 }
