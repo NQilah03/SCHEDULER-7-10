@@ -1,0 +1,104 @@
+
+
+html{
+    background-color:rgb(245, 236, 224);
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+
+}
+
+section.calendar{
+    background-color: antiquewhite;
+    color:rgb(123, 99, 67);
+    width: 290px;
+    padding: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    box-shadow: 10px 10px 10px rgba(71, 54, 54, 0.6);
+    border-radius: 5px;
+}
+
+section.calendar h1{
+    text-align: center;
+    color:rgb(123, 99, 67);
+    font-family: Georgia;
+    margin: 0 0 30px 0;
+}
+
+section.calendar form{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+section.calendar form label.Days{
+    display: inline-block;
+    width: 25px;
+    margin: 8px;
+    text-align: center;
+    color: rgb(105, 87, 63);
+    font-weight: 700; /* bold */
+    
+}
+
+section.calendar form label.day{
+    display: inline-block;
+    width: 25px;
+    margin: 8px;
+}
+
+section.calendar form label.day span{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    margin: -2px 0 0 -2px;
+    border-radius: 30%;
+    border: 2px solid rgb(183, 159, 128);
+    text-align: center;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+section.calendar form label.day span:hover{
+    border-color: rgb(86, 66, 39);
+}
+
+section.calendar form label.day em{
+    display: inline-block;
+    position: absolute;
+    border-radius: 150%;
+    width: 7px;
+    height: 8px;
+    background-color:rgb(86, 66, 39);
+    margin-left: 9px;
+    margin-top: -5px;
+    opacity: 0;
+    transition: all 0 linear;
+}
+
+section.calendar form label.day input[type=text]{
+    border: 0;
+    opacity: 0;
+    position: absolute;
+    margin-top: 40px;
+    left: 145px;
+    width: 300px;
+    height: 1px;
+    padding: 0;
+    outline: none;
+    font-size: 16px;
+    transition: height 0.2s linear, opacity 0,2s linear, color 0.2s linear;
+    color: #fff;
+}
