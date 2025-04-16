@@ -1,0 +1,25 @@
+html{
+    background-color: rgb(245, 236, 224);
+}
+
+
+section.Habits{
+    background-color: antiquewhite;
+    color: rgb(119, 89, 49);
+    width: 300px;
+    height: 300px;
+    padding: 45px;
+    transform: translateY(50%) translateX(50%);
+    box-shadow: 10px 10px 10px rgba(71, 54, 54, 0.6);
+}
+
+section.Habits h1{
+    text-align: center;
+    font-family: sans-serif;
+    font-size: xx-large;
+}
+
+section.Habits:hover{
+    /* figure out how to make it zoom in all direction */
+    /* scale: 1.1; */
+}
