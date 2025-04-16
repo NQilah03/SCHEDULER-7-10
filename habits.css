@@ -2,7 +2,6 @@ html{
     background-color: rgb(245, 236, 224);
 }
 
-
 section.Habits{
     background-color: antiquewhite;
     color: rgb(119, 89, 49);
@@ -32,19 +31,27 @@ section.Habits form input[type=text]{
 section.Habits form label.Days{
     position: relative;
     left: 60px;
+    padding: 2px;
+    bottom: -7px;
+    font-size: large;
 }
 
 section.Habits form input[type=checkbox]{
-    
+    width: 17px;
 }
 
 /* Ni yg w1,2,3,4,5 */
 section.Habits form label.week{
 position: relative;
-left: 0px;
+left: -5px;
 }
 
-section.Habits:hover{
-    /* figure out how to make it zoom in all direction */
-    /* scale: 1.1; */
+section.Habits form input[type=reset]{
+    display: block;
+    margin: auto;
+    background-color: rgb(216, 195, 169);
 }
+
+/* section.Habits:hover{
+    scale: 1.1;
+} */

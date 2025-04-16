@@ -120,7 +120,7 @@ section.calendar form label.day input[type=text]:focus+span{
     font-weight: bold;
     margin-bottom: 70px;
 } 
-
+/* 
 section.calendar form label.day input[type=text]:focus~em{
     border-radius: 0;
     border: 5px solid transparent;
@@ -132,7 +132,7 @@ section.calendar form label.day input[type=text]:focus~em{
     height: 0;
     display: inline-block;
     opacity: 1;
-}
+} */
 
 section.calendar form label.day input[type=text]:valid~em{
     display: inline-block;
