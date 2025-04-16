@@ -8,8 +8,8 @@ section.Habits{
     color: rgb(119, 89, 49);
     width: 300px;
     height: 300px;
+    margin: auto;
     padding: 45px;
-    transform: translateY(50%) translateX(50%);
     box-shadow: 10px 10px 10px rgba(71, 54, 54, 0.6);
 }
 
@@ -17,6 +17,31 @@ section.Habits h1{
     text-align: center;
     font-family: sans-serif;
     font-size: xx-large;
+}
+
+section.Habits form input[type=text]{
+    display: block;
+    margin: auto;
+    background-color: antiquewhite;
+    border: #fff;
+    color: rgb(119, 89, 49);
+    text-align: center;
+    font-size: large;
+}
+
+section.Habits form label.Days{
+    position: relative;
+    left: 60px;
+}
+
+section.Habits form input[type=checkbox]{
+    
+}
+
+/* Ni yg w1,2,3,4,5 */
+section.Habits form label.week{
+position: relative;
+left: 0px;
 }
 
 section.Habits:hover{
